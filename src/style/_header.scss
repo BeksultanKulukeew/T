@@ -1,0 +1,55 @@
+.header{
+padding: 35px 0;
+  position: relative;
+  &__content{
+    gap: 40px;
+    color: white;
+  @extend %flexCenter;
+    justify-content: space-between;
+  }
+  &__logo{
+    display: flex;
+    align-items: center;
+    & svg {
+      max-width: 52px;
+      max-height: 45px;
+    }
+  & h1{
+
+    font-size: 12px;
+  }
+    &__nav{
+      max-width: 680px;
+      width: 100%;
+    }
+  }
+  &__list{
+    @extend %flexCenter;
+    gap: 95px;
+    justify-content: space-between;
+    &-item{
+      font-size: 18px;
+    }
+  }
+  &__handlers{
+    @extend %flexCenter;
+    gap: 20px;
+  }
+  &__btn{
+    white-space: nowrap;
+    &_transparent{
+      @extend %buttonBordered;
+      padding: 18px 28px;
+      font-size: 18px;
+    }
+    &_gradient{
+      @extend %buttonGradient;
+      padding: 20px 40px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+}
+
+
+@import "intro";
